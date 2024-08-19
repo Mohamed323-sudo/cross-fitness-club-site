@@ -177,4 +177,46 @@ nav i:hover{
     height: 250px;
     margin-right: 25px;
 }
+/* services section styles */
+#services{
+    width: 100%;
+    min-height: 600px;
+    margin-top: 150px;
+    background-image: url(images/services_background.jpg);
+    background-position: center;
+    background-size: cover;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.services-container{
+    width: 80%;
+    margin: 0 auto;
+    padding: 80px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.services-container .service{
+    width: 250px;
+    height: 200px;
+    background-color: #ef7a2e;
+    margin: 10px;
+    text-align: center;
+    color: #fff;
+    font-size: 40px;
+    padding: 40px 20px; 
+}
+.services-container .service p{
+    margin-top: 30px;
+    font-size: 25px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.services-container .service img{
+    width: 40px;
+}
+.services-container .service .exclusive-img{
+    width: 70px;
+}
+
 
