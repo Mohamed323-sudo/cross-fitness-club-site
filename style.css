@@ -99,21 +99,20 @@ nav i:hover{
   display: flex;
   justify-content: center;
 }
-.card{
+.benefits-container .card{
     width: 30%;
     min-height: 250px;
     background-color: #fff;
-    padding: 10px;
     text-align: center;
     padding: 20px;
     margin-left: 20px;
 }
-.card h2{
+.benefits-container .card h2{
     font-weight: 600;
     margin-bottom: 30px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
-.card p{
+.benefits-container .card p{
     font-size: 17px;
     margin-bottom: 20px;
 }
@@ -218,5 +217,134 @@ nav i:hover{
 .services-container .service .exclusive-img{
     width: 70px;
 }
+/* formats section styles */
+#formats h1{
+    margin: 0 15%;
+    text-align: center;
+    font-size: 80px;
+    color: #000;
+    padding-top: 80px;
+    font-weight: 800;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 
+}
+.formats-container {
+    width: 90%;
+    margin: 0 auto;
+    padding: 80px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.format{
+    background-position: center;
+    background-size: cover;
+    width: 350px;
+    height: 450px;
+    color: #fff;
+    margin: 10px;
+    position: relative;
+}
+.format.pic-1{
+    background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/format1.jpg);
+}
+.format.pic-2{
+    background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/format2.jpg);
+}
+.format.pic-3{
+    background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/format3.jpg);
+}
+.format.pic-4{
+    background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/format4.jpg);
+}
+.format.pic-5{
+    background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/format5.jpg);
+}
+.format.pic-6{
+    background-image:linear-gradient(rgba(0,0,0,0.5), rgba(0, 0, 0, 0.5) ), url(images/format6.jpg);
+}
+.format span{
+    display: inline-block;
+    width: 100%;
+    padding: 0 30px 30px;
+    position: absolute;
+    bottom: 0;
+}
+.format span hr{
+    margin-bottom: 20px;
+    color: #444444;
+}
+.format span h2{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+.format span p{
+    color: #d3c7c7;
+    font-size: 15px;
+}
+/* payments section styles */
+#payments {
+    background-color: #ef7a2e;
+    width: 100%;
+    min-height: 400px;
+}
+
+#payments h1 {
+    text-align: center;
+    font-size: 45px;
+    color: #fff;
+    padding-top: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-bottom: 30px;
+
+}
+
+.payments-container {
+    padding: 20px 100px 50px;
+    display: flex;
+    justify-content: center;
+}
+.payments-container .card {
+    width: 30%;
+    min-height: 500px;
+    background-color: #fff;
+    text-align: center;
+    margin-left: 20px;
+}
+.payments-container .card .card-img{
+    width: 100%;
+    height: 50% ;
+    background-position: center;
+    background-size: cover;
+}
+.payments-container .card .card-text{
+    margin-top: 20px;
+}
+.payments-container .card .card-text h2{
+    color: #444444;
+    font-weight: 600;
+    margin-bottom: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.payments-container .card .card-text p{
+    color: #645e5e;
+}
+.payments-container .card .card-text img{
+    width: 50px;
+    margin-top: 20px;
+    padding-bottom: 20px;
+}
+.payments-container .card.card-1 .card-img {
+    background-image: url(images/payment1.jpg);
+}
+.payments-container .card.card-2 .card-img{
+    background-image: url(images/payment2.jpg);
+}
+.payments-container .card.card-3 .card-img{
+    background-image: url(images/payment3.jpg);
+}
+.payments-container .card.card-4 .card-img{
+    background-image: url(images/payment4.jpg);
+}
 
