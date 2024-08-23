@@ -1,4 +1,5 @@
-Steps taken to replicate the mockup using HTML and CSS
+**Steps taken to replicate the mockup using HTML and CSS**
+
 1.build and style the header
 2.build and style the benefits section
 3.build and style the activities section
