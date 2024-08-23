@@ -219,7 +219,6 @@ nav i:hover{
 }
 /* formats section styles */
 #formats h1{
-    margin: 0 15%;
     text-align: center;
     font-size: 80px;
     color: #000;
@@ -347,4 +346,62 @@ nav i:hover{
 .payments-container .card.card-4 .card-img{
     background-image: url(images/payment4.jpg);
 }
+/* testimonials section styles */
+#testimonials{
+    width: 100%;
+}
+#testimonials h1 {
+    text-align: center;
+    font-size: 60px;
+    color: #000;
+    padding-top: 50px;
+    font-weight: 800;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 
+}
+.testimonials-container{
+    width: 80%;
+    margin: 40px auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+.testimonials-box{
+    flex-basis: 50%;
+    padding: 20px;
+    display: flex;
+    gap: 40px;
+}
+.testimonials-box .testimonials-img{
+    background-position: center;
+    background-size: cover;
+    width: 180px;
+    height: 100px;
+    border-radius: 50%;
+    border: 10px solid #ef7a2e;
+}
+.testimonials-box.box1 .testimonials-img{
+    background-image: url(images/testimonials1.jpeg);
+}
+.testimonials-box.box2 .testimonials-img{
+    background-image: url(images/testimonials2.jpeg);
+}
+.testimonials-box.box3 .testimonials-img{
+    background-image: url(images/testimonials3.jpeg);
+}
+.testimonials-box.box4 .testimonials-img{
+    background-image: url(images/testimonials4.jpeg);
+}
+.testimonials-box.box5 .testimonials-img{
+    background-image: url(images/testimonials5.jpeg);
+}
+.testimonials-box.box6 .testimonials-img{
+    background-image: url(images/testimonials6.jpeg);
+}
+.testimonials-text{
+    padding-right: 20px;
+}
+.testimonials-text h3{
+    margin-top: 15px;
+    text-transform: uppercase;
+    color: #ef7a2e;
+}
