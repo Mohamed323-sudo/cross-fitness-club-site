@@ -4,6 +4,8 @@
     font-family: 'Poppins', sans-serif;
     box-sizing: border-box;
 }
+/* body styles */
+
 /* header section styling */
 header{
     width: 100%;
@@ -108,7 +110,49 @@ nav i:hover{
         width: 400px;
     }
 }
-
+/* Navigation panel */
+#sideNav{
+    width: 200px;
+    height: 100vh;
+    background: #000;
+    position: fixed;
+    top: 0;
+    left: -250px;
+    text-align: center;
+    z-index: 3;
+    transition: 0.5s;
+}
+#sideNav nav ul{
+    margin:70px auto ;
+}
+#sideNav nav ul li{
+    list-style: none;
+    margin-bottom: 10px;
+}
+#sideNav nav ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+}
+#sideNav nav ul li a:hover{
+    color: #999;
+}
+#menuBtn{
+    width: 50px;
+    height: 50px;
+    background: transparent;
+    position: fixed;
+    top: 10px;
+    left: -150px;
+    z-index: 4;
+    text-align: center;
+    transition: 0.5s;
+}
+#menuBtn i{
+    font-size: 35px;
+    line-height: 50px;
+    color: #fff;
+}
 /*  section 1 : benefits styles */
 #benefits{
     background-color: #ef7a2e;

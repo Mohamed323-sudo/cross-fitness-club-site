@@ -7,10 +7,11 @@
     <script src="https://kit.fontawesome.com/25e4e03065.js" crossorigin="anonymous"></script>
 </head>
 <body>
+    
     <header>
         <nav>
           <img src="images/logo.png" class="logo">
-            <i class="fa-solid fa-bars"></i>
+            <i class="fa-solid fa-bars" id="menuIcon"></i>
         </nav>
         <div class="hero">
             <div class="hero-pic">
@@ -26,8 +27,19 @@
                 <button type="button" class="btn">Join now</button>
             </div>
         </div>
-
     </header>
+    
+    <div id="sideNav">
+        <nav>
+            <ul>
+                <li><a href="#">About club</a></li>
+                <li><a href="#">Page 2</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div id="menuBtn">
+        <i class="fa-solid fa-xmark" id="closeIcon"></i>
+    </div>
     <section id="benefits">
         <h1>Benefits of sport training</h1>
         <div class="benefits-container">
@@ -90,11 +102,6 @@
                 <img src="images/activities5.jpg" alt="">
             </div>
         </div>
-                    <!-- <div class="col-3">
-                        <img src="images/activities3.jpg" alt="">
-                        <img src="images/activities4.jpg" alt="">
-                        <img src="images/activities5.jpg" alt="">
-                    </div> -->
     </section>
     <section id="services">
         <div class="services-container">
@@ -324,5 +331,7 @@
         <p>Sample text. Click to select the text box.Click again or double click to start editing the text.</p>
         <p>&copy;build by Mohamed Said Abdirahman</p>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
