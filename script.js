@@ -22,3 +22,7 @@ closeIcon.addEventListener("click", function(){
     sideNav.style.left = "-200px";
     menuBtn.style.left = "-150px";
 })
+
+
+
+

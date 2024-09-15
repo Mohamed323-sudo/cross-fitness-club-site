@@ -11,7 +11,7 @@ header{
     width: 100%;
     min-height: 100vh;
     background-image: url(images/bg.jpg);
-
+    overflow-x: hidden;
 }
 nav{
     width: 100%;
@@ -50,6 +50,7 @@ nav i:hover{
     color: #fff;
     padding: 50px 100px 50px 50px;
 }
+
 .hero-content h2{
     letter-spacing: 2px;
     text-transform: uppercase;
@@ -86,6 +87,56 @@ nav i:hover{
     background-color: #fff;
     color: #000;
 }
+
+/* Navigation panel */
+#sideNav {
+    width: 200px;
+    height: 100vh;
+    background: #000;
+    position: fixed;
+    top: 0;
+    left: -250px;
+    text-align: center;
+    z-index: 3;
+    transition: 0.5s;
+}
+
+#sideNav nav ul {
+    margin: 70px auto;
+}
+
+#sideNav nav ul li {
+    list-style: none;
+    margin-bottom: 10px;
+}
+
+#sideNav nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+}
+
+#sideNav nav ul li a:hover {
+    color: #999;
+}
+
+#menuBtn {
+    width: 50px;
+    height: 50px;
+    background: transparent;
+    position: fixed;
+    top: 10px;
+    left: -150px;
+    z-index: 4;
+    text-align: center;
+    transition: 0.5s;
+}
+
+#menuBtn i {
+    font-size: 35px;
+    line-height: 50px;
+    color: #fff;
+}
 @media screen and (min-width:425px){
     .hero{
         flex-direction: column-reverse;
@@ -110,49 +161,7 @@ nav i:hover{
         width: 400px;
     }
 }
-/* Navigation panel */
-#sideNav{
-    width: 200px;
-    height: 100vh;
-    background: #000;
-    position: fixed;
-    top: 0;
-    left: -250px;
-    text-align: center;
-    z-index: 3;
-    transition: 0.5s;
-}
-#sideNav nav ul{
-    margin:70px auto ;
-}
-#sideNav nav ul li{
-    list-style: none;
-    margin-bottom: 10px;
-}
-#sideNav nav ul li a{
-    text-decoration: none;
-    color: #fff;
-    font-size: 20px;
-}
-#sideNav nav ul li a:hover{
-    color: #999;
-}
-#menuBtn{
-    width: 50px;
-    height: 50px;
-    background: transparent;
-    position: fixed;
-    top: 10px;
-    left: -150px;
-    z-index: 4;
-    text-align: center;
-    transition: 0.5s;
-}
-#menuBtn i{
-    font-size: 35px;
-    line-height: 50px;
-    color: #fff;
-}
+
 /*  section 1 : benefits styles */
 #benefits{
     background-color: #ef7a2e;
@@ -167,6 +176,7 @@ nav i:hover{
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     
 }
+
 .benefits-container{
   display: flex;
   justify-content: center;
@@ -179,6 +189,7 @@ nav i:hover{
     padding: 20px;
     
 }
+
 .benefits-container .card h2{
     font-weight: 600;
     margin-bottom: 30px;
@@ -277,7 +288,6 @@ nav i:hover{
     width: 100%;
 }
 
-
 @media screen and (min-width:425px){
     #activities h1{
         font-size: 35px;
@@ -348,6 +358,8 @@ nav i:hover{
     background-position: center;
     background-size: cover;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    position: relative;
+    z-index: 2;
 }
 .services-container{
     width: 80%;
@@ -387,7 +399,8 @@ nav i:hover{
     padding-top: 80px;
     font-weight: 800;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-
+    position: relative;
+    z-index: -1;
 }
 .formats-container {
     width: 90%;
@@ -483,6 +496,8 @@ nav i:hover{
     background-color: #ef7a2e;
     width: 100%;
     min-height: 400px;
+    position: relative;
+    z-index: 1;
 }
 
 #payments h1 {
@@ -575,6 +590,9 @@ nav i:hover{
 /* testimonials section styles */
 #testimonials{
     width: 100%;
+    background-color: #fff;
+    position: relative;
+    z-index: 2;
 }
 #testimonials h1 {
     text-align: center;
@@ -589,6 +607,7 @@ nav i:hover{
     margin: 40px auto;
     display: flex;
     flex-wrap: wrap;
+  
 }
 .testimonials-box{
     flex-basis: 40%;
@@ -679,7 +698,7 @@ nav i:hover{
     min-height: 500px;
     padding: 50px 0;
     position: relative;
-   
+   z-index: 3;
 }
 .contacts-container{
     background: #fff;
@@ -736,8 +755,8 @@ nav i:hover{
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-    
 }
+
 @media screen and (min-width:425px){
     #contacts .back{
         width: 80%;
@@ -780,4 +799,142 @@ footer{
     footer {
         padding: 40px 0;
     }
+}
+/* animations and utility classes */
+
+@keyframes scaleFromLeft {
+    0% {
+        transform: scale(0);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+.scaleFromLeft {
+    animation: scaleFromLeft 1.5s linear;
+    transform-origin: left;
+    
+}
+@keyframes slideInRight {
+    0% {
+        transform: translateX(300px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.slideInRight {
+    animation: slideInRight 1.5s ease-in;
+    
+}
+
+@keyframes flip {
+    0% {
+        transform: perspective(400px)
+    }
+
+    30% {
+        transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
+        opacity: 1;
+    }
+
+    100% {
+        transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
+        opacity: 0;
+    }
+}
+
+.flip {
+    animation: flip 1.5s ease-in;
+    
+}
+@keyframes increaseSize {
+    0% {
+        transform: scale(0);
+        opacity: 0;
+    }
+
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.increaseSize {
+    animation: increaseSize 1.5s linear;
+    
+}
+@keyframes slideInLeft {
+    0% {
+        transform: translateX(-400px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.slideInLeft {
+    animation: slideInLeft 1.5s ease-in;
+    
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotateZ(0);
+
+    }
+
+    100% {
+        transform: rotateZ(180deg);
+
+    }
+}
+
+.rotate {
+    animation: rotate 1.5s linear;
+    
+}
+
+@keyframes slideUp {
+    0% {
+        transform: translateY(400px);
+
+    }
+
+    100% {
+        transform: translateY(0);
+
+    }
+}
+
+.slideUp {
+    animation: slideUp 1.5s ease-in;
+    
+}
+
+.animation--duration-2s {
+    animation-duration: 2s;
+}
+
+.animation--duration--3s {
+    animation-duration: 2.5s;
+}
+@keyframes enlarge {
+    0% {
+        width: 50%;
+    }
+
+    100% {
+        width: 100%;
+    }
+}
+
+.enlarge {
+    animation: enlarge 1.5s ease-in;
+    
 }
